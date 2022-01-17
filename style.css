@@ -5,6 +5,12 @@
     padding: 2% 2%;
 }
 
+body {
+    background-color: #5C5C5C;
+}
+
+/* HEADER */
+
 .PP {
     text-align: start;
     margin-bottom: 50px;
@@ -16,6 +22,8 @@
     margin-bottom: 70px;
     font-size: x-large;
 }
+
+/* ONGLETS */
 
 .onglet {
     text-align: center;
@@ -34,10 +42,9 @@
     justify-content: center;
 }
 
-.rond a {
+.onglet a {
     text-decoration: none;
     color: #FFFFFF;
-    
 }
 
 #print {    
@@ -75,6 +82,8 @@
     border: solid;
     border-color: #FFB0B0;
 }
+
+/* FOOTER */
 
 .foot {
     font-size: small;
