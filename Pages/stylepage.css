@@ -94,6 +94,18 @@
     justify-content: center;
 }
 
+.bandeau #print {
+    background-color: #ABF59F;
+}
+
+.bandeau #web {
+    background-color: #B4F3FB;
+}
+
+.bandeau #contact {
+    background-color: #FFB0B0;
+}
+
 .carousel {
     background-color: lightgrey;
     padding: 2%;
