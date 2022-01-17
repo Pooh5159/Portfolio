@@ -94,15 +94,16 @@
     justify-content: center;
 }
 
-.bandeau #print {
+#b-print {
     background-color: #ABF59F;
 }
 
-.bandeau #web {
+
+#b-web {
     background-color: #B4F3FB;
 }
 
-.bandeau #contact {
+#b-contact {
     background-color: #FFB0B0;
 }
 
