@@ -4,13 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylepage.css">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script> -->
     <title>Pauline Pierson - Web</title>
 </head>
 
@@ -50,7 +45,24 @@
         <div class="back-card">
             <div class="card">
                 <h2>Troyes Petits Chats</h2>
-                <img src="../Images/Web/TPC.png" alt="Troyes Petits Chats" title="Troyes Petits Chats">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img id="myImg1" onclick="clickNext('myImg1')"
+                    src="../Images/Web/TPC.png" alt="Troyes Petits Chats" title="Troyes Petits Chats"
+                    style="min-width:100%"> 
+                    </div>
+                    <div class="mySlides fade dnone">
+                        <video controls width="500" alt="Choubu" title="Choubu" id="myImg2" onclick="clickNext('myImg2')">
+                            <source src="../Images/Web/TPC.mp4" type="video/mp4">
+                        </video> 
+                    </div>
+                    <a class="prev" onclick="plusSlides('slide',-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides('slide',1)">&#10095;</a>
+                </div>
+                <div class="dots" style="text-align:center">
+                    <span class="dot active" onclick="currentSlide('slide',0)"></span>
+                    <span class="dot" onclick="currentSlide('slide',1)"></span>
+                </div>
                 <p>Projet stage RAN Pro <a href="https://troyespetitschats.fr/" target="_blank"
                         title="TroyesPetitsChats.fr">TroyesPetitsChats.fr</a></p>
             </div>
@@ -63,6 +75,7 @@
             </div>
         </div>
         <!-- FIN WORK -->
+        <script src="app.js"></script>
     </body>
 
     <footer class="foot">
