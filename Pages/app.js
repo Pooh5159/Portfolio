@@ -54,7 +54,7 @@ function clickNext(id) {
         modalImg.src = document.getElementById(id).src
         console.log('image');
     }
-    else {
+    else if (Array.prototype.slice.call(document.querySelectorAll('video')).includes(document.getElementById(id))) {
         modalVideo.src = document.getElementById(id).src
         console.log('video');
     }
