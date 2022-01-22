@@ -52,12 +52,14 @@ function clickNext(id) {
     modal.style.display = "block";
     if (Array.prototype.slice.call(document.querySelectorAll('img')).includes(document.getElementById(id))) {
         modalImg.src = document.getElementById(id).src
-        document;getelementbyid('img').style.display = "block"
+        document.getElementById('video').style.display = "none"
+        document.getElementById('img').style.display = "block"
         console.log('image');
     }
     else if (Array.prototype.slice.call(document.querySelectorAll('video')).includes(document.getElementById(id))) {
         modalVideo.src = document.getElementById(id).src
-        document;getelementbyid('video').style.display = "block"
+        document.getElementById('img').style.display = "none"
+        document.getElementById('video').style.display = "block"
         console.log('video');
     }
     // modalImg.src = document.getElementById(id).src;
