@@ -62,7 +62,7 @@ function clickNext(id) {
         document.getElementById('video').style.display = "block"
         document.getElementById('video').style.transform = "scale(1.5)"
     }
-    captionText.innerHTML = document.getElementById(id).alt;
+    captionText.innerHTML = document.getElementById(id).title;
 }
 
 var span = document.getElementsByClassName("close")[0];
