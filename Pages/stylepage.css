@@ -204,7 +204,7 @@ body {
     }
 
     to {
-        transform: scale(1.5)
+        transform: scale(1)
     }
 }
 
@@ -215,7 +215,7 @@ body {
     max-width: 700px;
     text-align: center;
     color: lightgray;
-    padding: 150px 0;
+    padding: 70px 0;
     height: 150px;
     animation-name: cache;
     animation-duration: 1.2s;
@@ -232,7 +232,7 @@ body {
 }
 
 .zoom {
-    min-width: 200%;
+    min-width: 50%;
 }
 
 .close {

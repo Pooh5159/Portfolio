@@ -54,13 +54,13 @@ function clickNext(id) {
         modalImg.src = document.getElementById(id).src
         document.getElementById('video').style.display = "none"
         document.getElementById('img').style.display = "block"
-        document.getElementById('img').classList.toggle = "zoom"
+        document.getElementById('img').classList.toggle("zoom")
     }
     else if (Array.prototype.slice.call(document.querySelectorAll('video')).includes(document.getElementById(id))) {
         modalVideo.src = document.getElementById(id).src
         document.getElementById('img').style.display = "none"
         document.getElementById('video').style.display = "block"
-        document.getElementById('video').classList.toggle = "zoom"
+        document.getElementById('video').classList.toggle("zoom")
     }
     captionText.innerHTML = document.getElementById(id).title;
 }
