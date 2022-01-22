@@ -179,6 +179,11 @@ body {
     transition: 0.3s;
 }
 
+.card video {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 .modal {
     display: none;
     position: fixed;
@@ -325,10 +330,11 @@ img {
   }
 
 .dots {
-    top: -9%;
+    top: 90%;
+    left: 35%;
     width: 20%;
     align-self: center;
-    position: relative;
+    position: absolute;
 }
 
 .dot {
