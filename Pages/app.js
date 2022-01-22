@@ -50,13 +50,18 @@ var captionText = document.getElementById("caption");
 
 function clickNext(id) {
     modal.style.display = "block";
-    if (document.getElementById(id) === img) {
+    if (Array.prototype.slice.call(document.querySelectorAll('img')).includes(document.getElementById(id))) {
         modalImg.src = document.getElementById(id).src
         console.log('image');
     }
-    else (document.getElementById(id) === video) 
+    else {
         modalVideo.src = document.getElementById(id).src
         console.log('video');
+    }
+    // modalImg.src = document.getElementById(id).src;
+    // modalVideo.src = document.getElementById(id).src;
+    console.log(document.querySelector('img#id'))
+    console.log(document.querySelector('imgid'))
     captionText.innerHTML = document.getElementById(id).alt;
 }
 
