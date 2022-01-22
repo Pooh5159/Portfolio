@@ -43,19 +43,18 @@
             <h2>Web</h2>
         </div>
         <div class="back-card">
-            <div class="card">
+            <div class="card" id="slide1">
                 <h2>Troyes Petits Chats</h2>
                 <div class="slideshow-container">
                     <div class="mySlides fade">
-                        <img id="myImg1" onclick="clickNext('myImg1')"
-                    src="../Images/Web/TPC.png" alt="Troyes Petits Chats" title="Troyes Petits Chats"
-                    style="min-width:100%"> 
+                        <img id="myImg1" onclick="clickNext('myImg1')" src="../Images/Web/TPC.png"
+                            alt="Troyes Petits Chats" title="Troyes Petits Chats" style="min-width:100%">
                     </div>
                     <div class="mySlides fade dnone">
-                        <video id="myImg2" onclick="clickNext('myImg2')" controls width="500" alt="Choubu" title="Choubu"
-                        style="min-width:100%">
+                        <video id="myImg2" onclick="clickNext('myImg2')" controls width="500" alt="Troyes Petits Chats"
+                            title="Troyes Petits Chats" style="min-width:100%">
                             <source src="../Images/Web/TPC.mp4" type="video/mp4">
-                        </video> 
+                        </video>
                     </div>
                     <a class="prev" onclick="plusSlides('slide',-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides('slide',1)">&#10095;</a>
@@ -67,12 +66,26 @@
                 <p>Projet stage RAN Pro <a href="https://troyespetitschats.fr/" target="_blank"
                         title="TroyesPetitsChats.fr">TroyesPetitsChats.fr</a></p>
             </div>
-            <div class="card">
+            <div class="card" id="slide2">
                 <h2>Choubu</h2>
-                <video controls width="500" alt="Choubu" title="Choubu">
-                    <source src="../Images/Web/Choubu.mp4" type="video/mp4">
-                </video>
-                <p>Projet WordPress en RAN Pro</p>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img id="myImg3" onclick="clickNext('myImg3')" src="../Images/Web//Choubu.png" alt="Choubu"
+                            title="Choubu" style="min-width:100%">
+                    </div>
+                    <div class="mySlides fade dnone">
+                        <video id="myImg4" onclick="clickNext('myImg4')" controls width="500" alt="Choubu"
+                            title="Choubu" style="min-width:100%">
+                            <source src="../Images/Web/Choubu.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <a class="prev" onclick="plusSlides('slide',-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides('slide',1)">&#10095;</a>
+                </div>
+                <div class="dots" style="text-align:center">
+                    <span class="dot active" onclick="currentSlide('slide',0)"></span>
+                    <span class="dot" onclick="currentSlide('slide',1)"></span>
+                </div>
             </div>
             <div id="myModal" class="modal">
                 <span class="close">&times;</span>
