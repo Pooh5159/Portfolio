@@ -54,18 +54,14 @@ function clickNext(id) {
         modalImg.src = document.getElementById(id).src
         document.getElementById('video').style.display = "none"
         document.getElementById('img').style.display = "block"
-        console.log('image');
+        document.getElementById('img').style.transform = "scale(1.5)"
     }
     else if (Array.prototype.slice.call(document.querySelectorAll('video')).includes(document.getElementById(id))) {
         modalVideo.src = document.getElementById(id).src
         document.getElementById('img').style.display = "none"
         document.getElementById('video').style.display = "block"
-        console.log('video');
+        document.getElementById('video').style.transform = "scale(1.5)"
     }
-    // modalImg.src = document.getElementById(id).src;
-    // modalVideo.src = document.getElementById(id).src;
-    console.log(document.querySelector('img#id'))
-    console.log(document.querySelector('imgid'))
     captionText.innerHTML = document.getElementById(id).alt;
 }
 
