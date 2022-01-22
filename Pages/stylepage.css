@@ -145,13 +145,11 @@ body {
 .card img {
     width: 100%;
     max-height: 350px;
-    margin-bottom: 2px;
     object-fit: cover;
 }
 
 .card video {
     width: 100%;    
-    margin-bottom: 2px;
 }
 
 /* FOOTER */
@@ -272,7 +270,7 @@ body {
     display: none
 }
 
-img {
+img, video {
     vertical-align: middle;
 }
 
@@ -333,7 +331,7 @@ img {
 
 .dots {
     width: 20%;
-    padding: 2%;
+    padding: bottom;
     align-self: flex-end;
     position: absolute;
 }
