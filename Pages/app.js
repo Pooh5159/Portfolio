@@ -43,6 +43,9 @@ var modal = document.getElementById("myModal");
 var img = document.getElementById("#myImg");
 var modalImg = document.getElementById("img");
 
+var video = document.getElementById("#myVid");
+var modalImg = document.getElementById("video");
+
 var captionText = document.getElementById("caption");
 
 function clickNext(id) {
