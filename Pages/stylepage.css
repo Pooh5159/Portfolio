@@ -144,8 +144,6 @@ body {
 
 .card img {
     width: 100%;
-    max-height: 350px;
-    object-fit: cover;
 }
 
 .card video {
@@ -271,7 +269,8 @@ body {
 }
 
 img, video {
-    vertical-align: middle;
+    vertical-align: top;
+    object-fit: cover;
 }
 
 .slideshow-container {
@@ -285,6 +284,10 @@ img, video {
 .slideshow-container a:hover {
     text-decoration: none;
 }
+
+/* .mySlides {
+    height: 100px;
+} */
 
 .prev,
 .next {
