@@ -7,6 +7,14 @@ var slide1 = document.getElementById("slide1");
 slide1.currentSlideIndex = 1;
 showSlides(slide1, slide1.currentSlideIndex);
 
+var slide2 = document.getElementById("slide2");
+slide2.currentSlideIndex = 1;
+showSlides(slide2, slide2.currentSlideIndex);
+
+var slide3 = document.getElementById("slide3");
+slide3.currentSlideIndex = 1;
+showSlides(slide3, slide3.currentSlideIndex);
+
 function plusSlides(id, n) {
     showSlides(id, id.currentSlideIndex += n);
 }

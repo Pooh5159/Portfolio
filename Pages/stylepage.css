@@ -1,4 +1,6 @@
-*, *:after, *:before {box-sizing:border-box}
+*, *:after, *:before {
+    box-sizing: border-box
+}
 
 .container {
     background-color: #5C5C5C;
@@ -13,13 +15,13 @@ body {
 
 /* HEADER */
 
-.header {    
+.header {
     margin-bottom: 50px;
     align-items: center;
     display: flex;
     justify-content: space-between;
 }
-   
+
 .header a {
     text-decoration: none;
     color: #FFFFFF;
@@ -44,15 +46,15 @@ body {
     font-size: medium;
     width: 100px;
     height: 100px;
-    margin : 5px;
-    border-radius: 150px;    
+    margin: 5px;
+    border-radius: 150px;
     border: solid;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#print {    
+#print {
     background-color: #ABF59F;
     border-color: #ABF59F;
 }
@@ -71,7 +73,7 @@ body {
 
 #web:hover {
     background-color: #80adb3;
-    color: #B4F3FB;    
+    color: #B4F3FB;
     border: solid;
     border-color: #B4F3FB;
 }
@@ -79,11 +81,11 @@ body {
 #contact {
     background-color: #FFB0B0;
     border-color: #FFB0B0;
-}    
-    
+}
+
 #contact:hover {
     background-color: #b37a7a;
-    color: #FFB0B0;        
+    color: #FFB0B0;
     border: solid;
     border-color: #FFB0B0;
 }
@@ -149,7 +151,7 @@ body {
 }
 
 .card video {
-    width: 100%;    
+    width: 100%;
 }
 
 /* FOOTER */
@@ -229,11 +231,11 @@ body {
 
 @keyframes cache {
     from {
-        opacity:0%;
+        opacity: 0%;
     }
 
     to {
-        opacity:100%;
+        opacity: 100%;
     }
 }
 
@@ -330,12 +332,15 @@ body {
     bottom: 8px;
     width: 100%;
     text-align: center;
-  }
+}
 
 .dots {
-    width: 20%;
-    padding: bottom;
+    width: 100%;
+    padding: 1%;
     align-self: flex-end;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
     position: absolute;
 }
 
@@ -343,11 +348,14 @@ body {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
     background-color: #5C5C5C;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+}
+
+.dot:not(:first-child) {
+    margin-left: 0.4em;
 }
 
 .active,
