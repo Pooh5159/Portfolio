@@ -1,39 +1,53 @@
 // SCRIPT SLIDER
-var slide = document.getElementById("slide");
+let slide = document.getElementById("slide");
 slide.currentSlideIndex = 1;
 showSlides(slide, slide.currentSlideIndex);
 
-var slide1 = document.getElementById("slide1");
+let slide1 = document.getElementById("slide1");
 slide1.currentSlideIndex = 1;
 showSlides(slide1, slide1.currentSlideIndex);
 
-var slide2 = document.getElementById("slide2");
-slide2.currentSlideIndex = 1;
-showSlides(slide2, slide2.currentSlideIndex);
+let slide2 = document.getElementById("slide2");
+if (slide2) {
+    slide2.currentSlideIndex = 1;
+    showSlides(slide2, slide2.currentSlideIndex);
+}
 
-var slide3 = document.getElementById("slide3");
-slide3.currentSlideIndex = 1;
-showSlides(slide3, slide3.currentSlideIndex);
+let slide3 = document.getElementById("slide3");
+if (slide3) {
+    slide3.currentSlideIndex = 1;
+    showSlides(slide3, slide3.currentSlideIndex);
+}
 
-// var slide4 = document.getElementById("slide4");
-// slide4.currentSlideIndex = 1;
-// showSlides(slide4, slide4.currentSlideIndex);
+let slide4 = document.getElementById("slide4");
+if (slide4) {
+slide4.currentSlideIndex = 1;
+showSlides(slide4, slide4.currentSlideIndex);
+}
 
-// var slide5 = document.getElementById("slide5");
-// slide5.currentSlideIndex = 1;
-// showSlides(slide5, slide5.currentSlideIndex);
+let slide5 = document.getElementById("slide5");
+if (slide5) {
+slide5.currentSlideIndex = 1;
+showSlides(slide5, slide5.currentSlideIndex);
+}
 
-// var slide6 = document.getElementById("slide6");
-// slide6.currentSlideIndex = 1;
-// showSlides(slide6, slide6.currentSlideIndex);
+let slide6 = document.getElementById("slide6");
+if (slide6) {
+slide6.currentSlideIndex = 1;
+showSlides(slide6, slide6.currentSlideIndex);
+}
 
-// var slide7 = document.getElementById("slide7");
-// slide7.currentSlideIndex = 1;
-// showSlides(slide7, slide7.currentSlideIndex);
+let slide7 = document.getElementById("slide7");
+if (slide7) {
+slide7.currentSlideIndex = 1;
+showSlides(slide7, slide7.currentSlideIndex);
+}
 
-// var slide8 = document.getElementById("slide8");
-// slide8.currentSlideIndex = 1;
-// showSlides(slide8, slide8.currentSlideIndex);
+let slide8 = document.getElementById("slide8");
+if (slide8) {
+slide8.currentSlideIndex = 1;
+showSlides(slide8, slide8.currentSlideIndex);
+}
 
 function plusSlides(id, n) {
     showSlides(id, id.currentSlideIndex += n);
