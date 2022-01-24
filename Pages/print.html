@@ -43,39 +43,69 @@
         <div class="bandeau" id="b-print">
             <h2>Print</h2>
         </div>
-        <div class="card">
-            <h2>Groupe Vocal des Pays du Der</h2>
-            <div class="slideshow-container" id="slide">
-                <div class="mySlides fade">
-                    <img id="myImg" onclick="clickNext('myImg')"
-                        src="../Images/Print/Concert Noël 2019/Affiche Noël 2019-1.png" alt="Affiche GVPD"
-                        title="Affiche" style="min-width:100%">
+        <div class="back-card">
+            <div class="card">
+                <h2>Groupe Vocal des Pays du Der</h2>
+                <div class="slideshow-container" id="slide">
+                    <div class="mySlides fade">
+                        <img id="myImg3" onclick="clickNext('myImg3')"
+                            src="../Images/Print/Concert Noël 2019/Affiche Noël 2019-1.png" alt="Affiche GVPD"
+                            title="Affiche" style="min-width:100%">
+                    </div>
+                    <div class="mySlides fade dnone">
+                        <img id="myImg4" onclick="clickNext('myImg4')"
+                            src="../Images/Print/Concert Noël 2019/Programme concert Noël 2019-1.png"
+                            alt="Programme GVPD" title="Programme R°" style="min-width:100%">
+                    </div>
+                    <div class="mySlides fade dnone">
+                        <img id="myImg5" onclick="clickNext('myImg5')"
+                            src="../Images/Print/Concert Noël 2019/Programme concert Noël 2019-2.png"
+                            alt="Programme GVPD" title="Programme V°" style="min-width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(slide,-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(slide,1)">&#10095;</a>
+                    <div class="dots" style="text-align:center">
+                        <span class="dot active" onclick="currentSlide(slide,0)"></span>
+                        <span class="dot" onclick="currentSlide(slide,1)"></span>
+                        <span class="dot" onclick="currentSlide(slide,2)"></span>
+                    </div>
                 </div>
-                <div class="mySlides fade dnone">
-                    <img id="myImg1" onclick="clickNext('myImg1')"
-                        src="../Images/Print/Concert Noël 2019/Programme concert Noël 2019-1.png" alt="Programme GVPD"
-                        title="Programme R°" style="min-width:100%">
-                </div>
-                <div class="mySlides fade dnone">
-                    <img id="myImg2" onclick="clickNext('myImg2')"
-                        src="../Images/Print/Concert Noël 2019/Programme concert Noël 2019-2.png" alt="Programme GVPD"
-                        title="Programme V°" style="min-width:100%">
-                </div>
-                <a class="prev" onclick="plusSlides(slide,-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(slide,1)">&#10095;</a>
-                <div class="dots" style="text-align:center">
-                    <span class="dot active" onclick="currentSlide(slide,0)"></span>
-                    <span class="dot" onclick="currentSlide(slide,1)"></span>
-                    <span class="dot" onclick="currentSlide(slide,2)"></span>
-                </div>
+                <p>Affiche et programme pour le concert de Noël 2019</p>
             </div>
-            <p>Affiche et programme pour le concert de Noël 2019</p>
-        </div>
-        <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content zoom" id="img">
-            <video controls autoplay class="modal-content zoom" id="video"></video>
-            <div id="caption"></div>
+            <div class="card">
+                <h2>Groupe Vocal des Pays du Der</h2>
+                <div class="slideshow-container" id="slide1">
+                    <div class="mySlides fade">
+                        <img id="myImg" onclick="clickNext('myImg')"
+                            src="../Images/Print/Concert 8 juin 2019/Affiche concert 8 juin 2019-1.png"
+                            alt="Affiche GVPD" title="Affiche" style="min-width:100%">
+                    </div>
+                    <div class="mySlides fade dnone">
+                        <img id="myImg1" onclick="clickNext('myImg1')"
+                            src="../Images/Print/Concert 8 juin 2019/Programme concert 8 Juin 2019-1.png"
+                            alt="Programme GVPD" title="Programme R°" style="min-width:100%">
+                    </div>
+                    <div class="mySlides fade dnone">
+                        <img id="myImg2" onclick="clickNext('myImg2')"
+                            src="../Images/Print/Concert 8 juin 2019/Programme concert 8 Juin 2019-2.png"
+                            alt="Programme GVPD" title="Programme V°" style="min-width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(slide1,-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(slide1,1)">&#10095;</a>
+                    <div class="dots" style="text-align:center">
+                        <span class="dot active" onclick="currentSlide(slide1,0)"></span>
+                        <span class="dot" onclick="currentSlide(slide1,1)"></span>
+                        <span class="dot" onclick="currentSlide(slide1,2)"></span>
+                    </div>
+                </div>
+                <p>Affiche et programme pour le concert du 8 juin 2019</p>
+            </div>
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content zoom" id="img">
+                <video controls autoplay class="modal-content zoom" id="video"></video>
+                <div id="caption"></div>
+            </div>
         </div>
         <!-- FIN WORK -->
         <script src="app.js"></script>
