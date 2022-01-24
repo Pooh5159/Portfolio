@@ -48,39 +48,39 @@ body {
 }
 
 #print {    
-    background-color: #ABF59F;
-    border-color: #ABF59F;    
+    background-color: #96d88c;
+    border-color: #96d88c;    
 }
 
 #print:hover {
-    background-color: #6fa367;
-    color: #ABF59F;
+    background-color: #66945f;
+    color: #a0e995;
     border: solid;
-    border-color: #ABF59F;
+    border-color: #a0e995;
 }
 
 #web {
-    background-color: #B4F3FB;
-    border-color: #B4F3FB;
+    background-color: #8fd8e2;
+    border-color: #8fd8e2;
 }
 
 #web:hover {
-    background-color: #80adb3;
-    color: #B4F3FB;    
+    background-color: #6a9da3;
+    color: #92e0eb;    
     border: solid;
-    border-color: #B4F3FB;
+    border-color: #92e0eb;
 }
 
 #contact {
-    background-color: #FFB0B0;
-    border-color: #FFB0B0;
+    background-color: #dd9898;
+    border-color: #dd9898;
 }
 
 #contact:hover {
-    background-color: #b37a7a;
-    color: #FFB0B0;        
+    background-color: #a06c6c;
+    color: #eea2a2;        
     border: solid;
-    border-color: #FFB0B0;
+    border-color: #eea2a2;
 }
 
 /* FOOTER */
