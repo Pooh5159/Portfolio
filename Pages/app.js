@@ -15,25 +15,25 @@ var slide3 = document.getElementById("slide3");
 slide3.currentSlideIndex = 1;
 showSlides(slide3, slide3.currentSlideIndex);
 
-var slide4 = document.getElementById("slide4");
-slide4.currentSlideIndex = 1;
-showSlides(slide4, slide4.currentSlideIndex);
+// var slide4 = document.getElementById("slide4");
+// slide4.currentSlideIndex = 1;
+// showSlides(slide4, slide4.currentSlideIndex);
 
-var slide5 = document.getElementById("slide5");
-slide5.currentSlideIndex = 1;
-showSlides(slide5, slide5.currentSlideIndex);
+// var slide5 = document.getElementById("slide5");
+// slide5.currentSlideIndex = 1;
+// showSlides(slide5, slide5.currentSlideIndex);
 
-var slide6 = document.getElementById("slide6");
-slide6.currentSlideIndex = 1;
-showSlides(slide6, slide6.currentSlideIndex);
+// var slide6 = document.getElementById("slide6");
+// slide6.currentSlideIndex = 1;
+// showSlides(slide6, slide6.currentSlideIndex);
 
-var slide7 = document.getElementById("slide7");
-slide7.currentSlideIndex = 1;
-showSlides(slide7, slide7.currentSlideIndex);
+// var slide7 = document.getElementById("slide7");
+// slide7.currentSlideIndex = 1;
+// showSlides(slide7, slide7.currentSlideIndex);
 
-var slide8 = document.getElementById("slide8");
-slide8.currentSlideIndex = 1;
-showSlides(slide8, slide8.currentSlideIndex);
+// var slide8 = document.getElementById("slide8");
+// slide8.currentSlideIndex = 1;
+// showSlides(slide8, slide8.currentSlideIndex);
 
 function plusSlides(id, n) {
     showSlides(id, id.currentSlideIndex += n);
