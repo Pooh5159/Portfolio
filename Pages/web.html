@@ -46,7 +46,7 @@
         <div class="back-card">
             <div class="card">
                 <h2>Troyes Petits Chats</h2>
-                <div class="slideshow-container" id="slide">
+                <div class="slideshow-container thisSlide" id="slide">
                     <div class="mySlides fade">
                         <img id="myImg" onclick="clickNext('myImg')" src="../Images/Web/TPC.png"
                             alt="Troyes Petits Chats" title="Troyes Petits Chats" style="min-width:100%">
@@ -68,7 +68,7 @@
             </div>
             <div class="card">
                 <h2>Choubu</h2>
-                <div class="slideshow-container" id="slide1">
+                <div class="slideshow-container thisSlide" id="slide1">
                     <div class="mySlides fade">
                         <img id="myImg1" onclick="clickNext('myImg1')" src="../Images/Web//Choubu.png" alt="Choubu"
                             title="Choubu" style="min-width:100%">
@@ -88,7 +88,7 @@
                 <p>E-boutique réalisée en local sous Wordpress</p>
             </div>
             <div id="myModal" class="modal">
-                <span class="close">&times;</span>
+                <span onclick="closeModal()" class="close">&times;</span>
                 <img class="modal-content zoom" id="img">
                 <video controls autoplay class="modal-content zoom" id="video"></video>
                 <div id="caption"></div>

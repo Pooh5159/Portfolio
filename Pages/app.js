@@ -1,77 +1,43 @@
-// SCRIPT SLIDER
-let slide = document.getElementById("slide");
-slide.currentSlideIndex = 1;
-showSlides(slide, slide.currentSlideIndex);
+// Je récupère tout les classes .thisSlide (Vous pouvez appeler la classe comme vous voulez)
+const slideList = document.querySelectorAll(".thisSlide");
+// Je déclare toutes ces classes dans un Tableau
+const slideArray = [...slideList];
 
-let slide1 = document.getElementById("slide1");
-slide1.currentSlideIndex = 1;
-showSlides(slide1, slide1.currentSlideIndex);
+// Pour chaque element du Tableau je déclare que slide = element, ainsi j'évite de déclarer 50 slides
+slideArray.forEach(element => {
+    let slide = element;
+    // Si le slide existe (toujours vrai) alors ce slide prendra 1 en index et mettra en marche la fonction showSlides
+    if (this.slide) {
+        slide.currentSlideIndex = 1;
+        showSlides(slide, slide.currentSlideIndex);
+        return
+    } else {
+        console.log('Une erreur s\'est produite');
+    }
+});
 
-let slide2 = document.getElementById("slide2");
-if (slide2) {
-    slide2.currentSlideIndex = 1;
-    showSlides(slide2, slide2.currentSlideIndex);
+function plusSlides(slide, n) {
+    showSlides(slide, slide.currentSlideIndex += n);
 }
 
-let slide3 = document.getElementById("slide3");
-if (slide3) {
-    slide3.currentSlideIndex = 1;
-    showSlides(slide3, slide3.currentSlideIndex);
+function currentSlide(slide, n) {
+    showSlides(slide, slide.currentSlideIndex = n);
 }
 
-let slide4 = document.getElementById("slide4");
-if (slide4) {
-slide4.currentSlideIndex = 1;
-showSlides(slide4, slide4.currentSlideIndex);
-}
-
-let slide5 = document.getElementById("slide5");
-if (slide5) {
-slide5.currentSlideIndex = 1;
-showSlides(slide5, slide5.currentSlideIndex);
-}
-
-let slide6 = document.getElementById("slide6");
-if (slide6) {
-slide6.currentSlideIndex = 1;
-showSlides(slide6, slide6.currentSlideIndex);
-}
-
-let slide7 = document.getElementById("slide7");
-if (slide7) {
-slide7.currentSlideIndex = 1;
-showSlides(slide7, slide7.currentSlideIndex);
-}
-
-let slide8 = document.getElementById("slide8");
-if (slide8) {
-slide8.currentSlideIndex = 1;
-showSlides(slide8, slide8.currentSlideIndex);
-}
-
-function plusSlides(id, n) {
-    showSlides(id, id.currentSlideIndex += n);
-}
-
-function currentSlide(id, n) {
-    showSlides(id, id.currentSlideIndex = n);
-}
-
-function showSlides(id, n) {
-
+function showSlides(slide, n) {
     var i;
-    var slides = id.getElementsByClassName("mySlides");
-    var dots = id.getElementsByClassName("dot");
-    if (n > slides.length) { id.currentSlideIndex = 1 }
-    if (n < 1) { id.currentSlideIndex = slides.length }
+    var slides = slide.getElementsByClassName("mySlides");
+    var dots = slide.getElementsByClassName("dot");
+    if (n > slides.length) { slide.currentSlideIndex = 1 }
+    if (n < 1) { slide.currentSlideIndex = slides.length }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[id.currentSlideIndex - 1].style.display = "block";
-    dots[id.currentSlideIndex - 1].className += " active";
+    slides[slide.currentSlideIndex - 1].style.display = "block";
+    dots[slide.currentSlideIndex - 1].className += " active";
 }
 
 // var slideIndex = 1;
@@ -111,20 +77,13 @@ function showSlides(id, n) {
 //     slides[n].style.display = "block";
 // }
 
-
-// SCRIPT LIGHTBOX
-
-var modal = document.getElementById("myModal");
-
-var img = document.getElementById("#myImg");
-var modalImg = document.getElementById("img");
-
-var video = document.getElementById("#myVid");
-var modalVideo = document.getElementById("video");
-
-var captionText = document.getElementById("caption");
-
+// Open Modal
 function clickNext(id) {
+    let modal = document.getElementById("myModal");
+    let modalImg = document.getElementById("img");
+    let modalVideo = document.getElementById("video");
+    let captionText = document.getElementById("caption");
+
     modal.style.display = "block";
     if (Array.prototype.slice.call(document.querySelectorAll('img')).includes(document.getElementById(id))) {
         modalImg.src = document.getElementById(id).src
@@ -139,9 +98,10 @@ function clickNext(id) {
     captionText.innerHTML = document.getElementById(id).title;
 }
 
-var span = document.getElementsByClassName("close")[0];
+// Close Modal
+function closeModal() {
+    let modal = document.getElementById("myModal");
 
-span.onclick = function () {
     modal.style.display = "none";
     modal.classList.add("dnone")
     let method = document.querySelector("#myModal").classList == "dnone" ? "play" : "pause";
