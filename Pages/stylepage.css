@@ -128,33 +128,6 @@ body {
     justify-content: space-evenly;
 }
 
-.back-f {
-    background-color: lightgrey;
-    color: black;
-    border-radius: 20px;
-    padding: 2%;
-}
-
-.back-f img {
-    height: 40px;
-    width: 40px;
-}
-
-button {
-    background-color: black;
-    color: #FFFFFF;
-    height: 35px;
-    width: 75px;
-    border-radius: 10px;
-    
-}
-
-button:hover {
-    cursor: pointer;
-    background-color: #FFFFFF;
-    color: black
-}
-
 .card {
     background-color: gray;
     width: 600px;
@@ -201,6 +174,44 @@ button:hover {
 
 .foot a:hover {
     text-decoration: underline;
+}
+
+.back-f {
+    background-color: lightgrey;
+    color: black;
+    border-radius: 20px;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: 50%;
+}
+
+.col img {
+    height: 40px;
+    width: 40px;
+}
+
+button {
+    background-color: black;
+    color: #FFFFFF;
+    height: 35px;
+    width: 75px;
+    border-radius: 10px;
+
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: black
 }
 
 /* CSS LIGHTBOX */
@@ -271,7 +282,7 @@ button:hover {
 }
 
 .zoom {
-    min-width: 50%;    
+    min-width: 50%;
 }
 
 .close {
