@@ -1,53 +1,18 @@
 // SCRIPT SLIDER
-let slide = document.getElementById("slide");
-slide.currentSlideIndex = 1;
-showSlides(slide, slide.currentSlideIndex);
+const slideList = document.querySelectorAll(".thisSlide");
 
-let slide1 = document.getElementById("slide1");
-slide1.currentSlideIndex = 1;
-showSlides(slide1, slide1.currentSlideIndex);
+const slideArray = [...slideList];
 
-let slide2 = document.getElementById("slide2");
-if (slide2) {
-    slide2.currentSlideIndex = 1;
-    showSlides(slide2, slide2.currentSlideIndex);
-}
-
-let slide3 = document.getElementById("slide3");
-if (slide3) {
-    slide3.currentSlideIndex = 1;
-    showSlides(slide3, slide3.currentSlideIndex);
-}
-
-let slide4 = document.getElementById("slide4");
-if (slide4) {
-slide4.currentSlideIndex = 1;
-showSlides(slide4, slide4.currentSlideIndex);
-}
-
-let slide5 = document.getElementById("slide5");
-if (slide5) {
-slide5.currentSlideIndex = 1;
-showSlides(slide5, slide5.currentSlideIndex);
-}
-
-let slide6 = document.getElementById("slide6");
-if (slide6) {
-slide6.currentSlideIndex = 1;
-showSlides(slide6, slide6.currentSlideIndex);
-}
-
-let slide7 = document.getElementById("slide7");
-if (slide7) {
-slide7.currentSlideIndex = 1;
-showSlides(slide7, slide7.currentSlideIndex);
-}
-
-let slide8 = document.getElementById("slide8");
-if (slide8) {
-slide8.currentSlideIndex = 1;
-showSlides(slide8, slide8.currentSlideIndex);
-}
+slideArray.forEach(element => {
+    let slide = element;
+    if (this.slide) {
+        slide.currentSlideIndex = 1;
+        showSlides(slide, slide.currentSlideIndex);
+        return
+    } else {
+        console.log('Une erreur s\'est produite');
+    }
+});
 
 function plusSlides(id, n) {
     showSlides(id, id.currentSlideIndex += n);
