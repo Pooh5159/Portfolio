@@ -183,15 +183,17 @@ body {
     padding: 2%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .row {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .col {
     width: 50%;
+    padding: 0.5%;
 }
 
 .col img {
@@ -199,19 +201,35 @@ body {
     width: 40px;
 }
 
+.col a {
+    text-decoration: none;
+}
+
+.center {
+    justify-content: center;
+}
+
 button {
     background-color: black;
     color: #FFFFFF;
-    height: 35px;
+    height: 40px;
     width: 75px;
-    border-radius: 10px;
-
+    border-radius: 5px;
+    vertical-align: top;
 }
 
 button:hover {
     cursor: pointer;
     background-color: #FFFFFF;
     color: black
+}
+
+li {
+    list-style-type: square;
+}
+
+.log img, .lang img {
+    margin-right: 1%;
 }
 
 /* CSS LIGHTBOX */
