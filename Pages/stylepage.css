@@ -232,6 +232,15 @@ li {
     margin-right: 1%;
 }
 
+.mention {
+    width: 75%;
+    text-align: center;
+}
+
+.mention p {
+    text-align: justify;
+}
+
 /* CSS LIGHTBOX */
 
 .card img {
