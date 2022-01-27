@@ -158,6 +158,25 @@ body {
     width: 100%;
 }
 
+.contact {
+    color: #5C5C5C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact img{
+    height: 40px;
+}
+
+.vertical-line{
+    display: inline-block;
+    border-left: 2px solid #5C5C5C;
+    margin: 0 5px;
+    height: 150px;
+    justify-content: center;
+}
+
 /* FOOTER */
 
 .foot {
