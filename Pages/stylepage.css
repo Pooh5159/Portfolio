@@ -14,7 +14,6 @@ body {
 }
 
 /* HEADER */
-
 .header {
     margin-bottom: 50px;
     align-items: center;
@@ -91,7 +90,6 @@ body {
 }
 
 /* BODY */
-
 .bandeau {
     height: 70px;
     border-radius: 20px;
@@ -186,7 +184,6 @@ body {
 }
 
 /* FOOTER */
-
 .foot {
     font-size: small;
     display: flex;
@@ -268,8 +265,8 @@ li {
     text-align: justify;
 }
 
-/* CSS LIGHTBOX */
 
+/* CSS LIGHTBOX */
 .card img {
     cursor: pointer;
     transition: 0.3s;
@@ -384,8 +381,8 @@ li {
     }
 }
 
-/* CSS SLIDER */
 
+/* CSS SLIDER */
 .dnone {
     display: none
 }
@@ -522,3 +519,51 @@ li {
         font-size: 11px
     }
 }
+
+
+/* CSS BUTTON TO TOP */
+.gg-chevron-up {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px
+}
+.gg-chevron-up::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(-45deg);
+    left: 8px;
+    bottom: 2px
+}
+
+#toTop {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: grey;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+  }
+  
+  #toTop:hover {
+    background-color: #5C5C5C;
+  }
