@@ -150,6 +150,14 @@ body {
     color: lightgrey;
 }
 
+.card a:not(:last-child) {
+    color: #5C5C5C;
+}
+
+.card a:not(:last-child):hover {
+    color: #FFFFFF;
+}
+
 .card img {
     width: 100%;
 }
@@ -165,11 +173,11 @@ body {
     align-items: center;
 }
 
-.contact img{
+.contact img {
     height: 40px;
 }
 
-.vertical-line{
+.vertical-line {
     display: inline-block;
     border-left: 2px solid #5C5C5C;
     margin: 0 5px;
@@ -204,6 +212,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -351,20 +360,24 @@ li {
     .modal-content {
         width: 100%;
     }
+
     .rond {
         width: 70px;
         height: 70px;
         font-size: small;
     }
+
     .card {
         width: 33vh;
         height: 32vh;
         font-size: small;
     }
+
     h2 {
         font-size: 1em;
         font-weight: bold;
     }
+
     .mySlides img, .mySlides video {
         max-height: 12vh;
         max-width: 100%;
@@ -404,7 +417,6 @@ li {
     width: auto;
     padding: 16px;
     margin-top: -25px;
-    color: lightgray;
     font-weight: bold;
     font-size: 30px;
     transition: 0.6s ease;
@@ -430,7 +442,7 @@ li {
 }
 
 .text {
-    color: lightgray;
+    color: #5C5C5C;
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
@@ -492,6 +504,13 @@ li {
 
     to {
         opacity: 1
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .dot {
+        height: 8px;
+        width: 8px;
     }
 }
 
