@@ -522,16 +522,21 @@ li {
 
 
 /* CSS BUTTON TO TOP */
+html {
+    scroll-behavior: smooth;
+}
+
 .gg-chevron-up {
     box-sizing: border-box;
     position: relative;
     display: block;
-    transform: scale(var(--ggs,1));
+    transform: scale(var(--ggs, 1));
     width: 22px;
     height: 22px;
     border: 2px solid transparent;
     border-radius: 100px
 }
+
 .gg-chevron-up::after {
     content: "";
     display: block;
@@ -562,8 +567,8 @@ li {
     font-size: 20px;
     height: 40px;
     width: 40px;
-  }
-  
-  #toTop:hover {
+}
+
+#toTop:hover {
     background-color: #5C5C5C;
-  }
+}
