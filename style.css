@@ -98,18 +98,18 @@ body {
 
 /* FOOTER */
 
-.foot {
+footer {
     font-size: small;
     display: flex;
     justify-content: space-between;
     margin-top: 70px;
 }
 
-.foot a {
+footer a {
     text-decoration: none;
     color: #FFFFFF;
 }
 
-.foot a:hover {
+footer a:hover {
     text-decoration: underline;
 }

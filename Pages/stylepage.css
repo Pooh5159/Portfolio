@@ -14,14 +14,14 @@ body {
 }
 
 /* HEADER */
-.header {
+header {
     margin-bottom: 50px;
     align-items: center;
     display: flex;
     justify-content: space-between;
 }
 
-.header a {
+header a {
     text-decoration: none;
     color: #FFFFFF;
 }
@@ -184,19 +184,19 @@ body {
 }
 
 /* FOOTER */
-.foot {
+footer {
     font-size: small;
     display: flex;
     justify-content: space-between;
     margin-top: 70px;
 }
 
-.foot a {
+footer a {
     text-decoration: none;
     color: #FFFFFF;
 }
 
-.foot a:hover {
+footer a:hover {
     text-decoration: underline;
 }
 
